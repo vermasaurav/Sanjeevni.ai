@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.upperText{
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+    font-weight:bolder;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+.bluetxt{
+    color: #0288D1;
+}
+.greentxt{
+    color: #379237;
+}
+.logo{
+    margin-left: 36rem;
+    margin-top: 0.8rem;
+    height: 5rem;
+    width: 11rem;
+}
+.main{
+    margin-top: 1.6rem;
+}
+
+
+.part1{
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    align-items:center;
+    margin: auto;
+    margin-top: 4.5rem;
+    width: 50rem;
+    
+}
+.line1{
+    background-color: #E6F5E6;
+    padding: 1rem;
+    font-size:10px;
+    border-radius: 0.5rem;
+    width: 25rem;
+    
+    
+}
+.line2{
+    background-color: #E6F5E6;
+    padding: 1rem;
+    font-size:10px;
+    border-radius: 0.5rem;
+    width: 20rem;
+    
+}
+.part2{
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    width: 50rem;
+    margin: auto;
+    align-items: center;
+    margin-top: 1rem;
+}
+.inp{
+    width: 41rem;
+    padding: 0.6rem;
+    border: 2px solid grey;
+    border-radius: 0.3rem;
+    margin-left: 18.5rem;
+    margin-top: 8.5rem;
+}
+
+.bTn{
+    position: absolute;
+    left: 60rem;
+    top: 35.5rem;
+}
+.sendBtn{
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 5px; 
+      
+}
+.Sendimg{
+    width: 2.5rem;
+    height: 2.5rem;
+    
+}
+.syncBtn{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.syncimg{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1%;
+}
+
+
+
+
+
