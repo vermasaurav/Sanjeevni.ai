@@ -76,17 +76,22 @@ body{
     margin-left: 18.5rem;
     margin-top: 8.5rem;
 }
-
-.bTn{
-    position: absolute;
-    left: 60rem;
-    top: 35.5rem;
+.inp-main{
+    display: flex;
+    flex-direction: row;
+    
 }
+
+
 .sendBtn{
     border: none;
     cursor: pointer;
-    margin-right: 1rem;
-    border-radius: 5px; 
+    margin-right: 0.6rem;
+    margin-left: 0.3rem;
+    border-radius: 5px;
+    /* width:2.5rem; */
+    height: 2.5rem; 
+    margin-top: 8.5rem;
       
 }
 .Sendimg{
@@ -98,12 +103,100 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    height: 2.5rem;
+    margin-top: 8.5rem;
     
 }
 .syncimg{
     width: 2.5rem;
     height: 2.5rem;
     margin-top: 1%;
+}
+
+
+@media (max-width: 768px) {
+    .inp {
+        width: 100%;
+        margin: 1rem auto 0 auto; 
+    }
+
+   
+
+    .sendBtn,
+    .syncBtn {
+        display: inline-block; 
+        margin: 0 0.5rem; 
+    }
+    
+    .logo {
+       
+       
+        margin: auto;
+        height: auto;
+
+        width: 70%;
+        max-width: 200px;
+    }
+        .part1,
+    .part2 {
+        flex-direction: column; 
+        margin-top: 1rem; 
+        width: auto; 
+    }
+
+    .line1,
+    .line2 {
+        width: 100%; 
+        margin-top: 1rem; 
+    }
+    
+}
+
+@media (max-width: 980px) {
+    .part1,
+    .part2 {
+        flex-direction: column;
+        margin-top: 1rem;
+        width: auto;
+    }
+
+    .line1,
+    .line2 {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+  
+    .inp {
+        width: 100%;
+        margin: 1rem auto 0 auto;
+    }
+
+    
+
+    .sendBtn,
+    .syncBtn {
+        display: inline-block;
+        margin: 0.5rem;
+        margin-top: 1.3rem;
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 70%;
+        max-width: 200px;
+        
+    }
+
+    
+    .main {
+        text-align: center;
+        margin-top: 1rem;
+    }
 }
 
 
