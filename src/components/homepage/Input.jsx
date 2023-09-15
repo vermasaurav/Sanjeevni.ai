@@ -1,29 +1,27 @@
-import { React, useState, useReducer } from 'react'
-import { sendMsg } from '../../openai';
-import send from '../../assests/Group 3 new.svg';
-import syncBtn from '../../assests/Group 6 new.svg';
+import { React, useState } from 'react'
+import send from '../../assests/sendIcon.svg';
+import syncBtn from '../../assests/syncIcon.svg';
 import '../../App.css';
 
-
-const Input = () => {
-  const [input, setInput] = useState("");
-
-  const handledSend = async () => {
-    const res = await sendMsg(input);
-    console.log(res);
-  }
-
-
+const Input = ({ setInputValue, setInitialui, responseGenerate }) => {
+  const [input, setInput] = useState('');
+  const handleSendClick = () => {
+    setInputValue(input);
+    setInitialui(false);
+    responseGenerate(input, setInput);
+    setInput('');
+  };
   return (
     <>
       <div className='inp-main'>
-        
-          <input type='text' placeholder='Write your query here....' className='inp' value={input} onChange={(e) => { setInput(e.target.value) }} />
-       
-        
-          <button className='sendBtn' onClick={handledSend}><img src={send} alt='sendImage' className='Sendimg' /></button>
-          <button className='syncBtn'><img src={syncBtn} alt='sync' className='syncimg' /></button>
-        
+
+        <input type='text' placeholder='Write your query here....' className='inp' value={input} onChange={(e) => { setInput(e.target.value) }} />
+
+        <button className='sendBtn' onClick={handleSendClick}><img src={send} alt='sendImage' className='Sendimg' /></button>
+
+
+        <button className='syncBtn' onClick={()=>setInitialui(true)}><img src={syncBtn} alt='sync' className='syncimg' /></button>
+
       </div>
     </>
   )

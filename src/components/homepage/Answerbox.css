@@ -1,0 +1,15 @@
+.answer-box{
+    width: 100%;
+    background-color: #e6f5e6;
+    padding: 1.5rem 15rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+p{
+    word-break: break-all;
+}
